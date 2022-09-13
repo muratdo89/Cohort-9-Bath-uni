@@ -1,0 +1,23 @@
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #e1661e;
+
+}
+h1{
+    text-align: center;
+    color: #e1661e;
+}
+h2{
+    text-align: center;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    color: #e1661e;
+}
+
+body{
+    background-color: aliceblue;
+    border: 15px solid #e1661e;
+   
+
+}
