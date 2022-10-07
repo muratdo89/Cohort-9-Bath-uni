@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggling a class with Javascript</title>
+</head>
+<style>
+
+    #custom-body.dark-mode{
+        background: rgb(184, 171, 171);
+    }
+    .hero{
+        padding: 4rem 0;
+        display:flex;
+        justify-content: center;
+        background-color: coral;
+    }
+</style>
+<body id="custom-body">
+    <div class="hero">
+       <div>
+        <h1>My amazing website</h1>
+        <button onclick="toggleMode()" id="toggle">Toggle</button>
+       </div>
+    </div>
+
+    <script>
+        // I want to add class when i click the toggle button
+        //This class will give dark mode colours to the body and some of its children elements.
+
+
+
+        //first i need to create a function that ads or removews a class,depending on if the class 
+
+        function toggleMode(){
+          const body =  document.getElementById("custom-body")
+          //if has
+
+          if(body.classList.contains("dark-mode")){
+            body.classList.remove('dark-mode');
+
+          }else{
+            body.classList.add('dark-mode');
+          }
+
+
+        }
+    </script>
+</body>
+</html>
