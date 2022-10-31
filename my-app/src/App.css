@@ -33,4 +33,21 @@
 .flex{
   display: flex;
   gap: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.button{
+  margin-bottom: 10px;
+}
+
+.box{
+  padding-top: 40px;
+  width: 100px;
+  height: 100px;
+  color: red;
+  background-color: black;
+}
+.box.is-active{
+  background-color: blue;
 }
