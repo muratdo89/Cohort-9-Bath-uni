@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+:root{
+--Red: hsl(0, 100%, 66%);
+--White: hsl(0, 0%, 100%);
+--Light : hsl(270, 3%, 87%);
+--Dark : hsl(279, 6%, 55%);
+--Very : hsl(278, 68%, 11%);
+
+}
+
+*,* > *{
+font-family: 'Space Grotesk', sans-serif;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+ body{
+    min-height: 100vh  ;
+ }
+.hidden{
+    display: none ;
+}
+.error{
+
+border: 2px solid var(--Red);}
+.error_message{
+    gap: 0;
+}
+.error_message::after{
+    content: "can't be blank";
+    color: var(--Red);
+    margin-top: .2rem;
+}
+.container{
+    display: flex;
+    align-items: center;
+
+}
+.left_section{
+    min-height:100vh;
+    width: 40%;
+    background-image:url(./images/bg-main-desktop.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.cards{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    left: 100%;
+    transform: translate(-50%,-50%);
+}
+
+.front_card{
+    position: relative ;
+    transform: translateX(-100px);
+
+}
+
+.card_logo{
+    position: absolute;
+    top: 1rem;
+}
+#number{
+    position: absolute;
+    color: var(--White);
+    bottom: 5rem;
+    left: 1rem;
+    letter-spacing: 2px;
+
+}
+.card_info{
+    position: absolute;
+    bottom: 2rem;
+    left: 1rem;
+    right: 3rem;
+    display: flex;
+    color: var(--White);
+    justify-content: space-between;
+}
+.back_card{
+    position: relative;
+}
+#cvc{
+    position: absolute;
+    right: 3.5rem ;
+    top: 7rem;
+    color: var(--Light);
+}
+.right_section {
+    display: flex;
+    
+}
