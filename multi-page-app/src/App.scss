@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+}
+
+/* nav */
+
+nav {
+  background: #444;
+}
+nav ul {
+  list-style: none;
+  display:flex;
+  justify-content: center;
+}
+
+nav ul li {
+  padding:1rem;
+}
+
+nav ul li a {
+  color: #fff;
+}
+
+/* Dashboard */
+
+.Dashboard-header nav {
+  background-color: blue;
+}
+
+/* Products */
+
+.products-list {
+  &__item {
+    border-bottom: 1px solid #e9e9e9;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    div {
+      padding: 0 1rem;
+    }
+  }
+}
